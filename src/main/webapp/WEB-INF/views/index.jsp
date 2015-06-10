@@ -2,13 +2,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="root" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
-<!-- saved from url=(0042)http://ashobiz.asia/ericka36/red/blog.html -->
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <!-- Title here -->
-<title>Blog - Ericka</title>
+<title>Blog - Views</title>
 <!-- Description, Keywords and Author -->
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your,Keywords">
@@ -17,17 +16,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Styles -->
-<!-- Bootstrap CSS -->
 <link href="${root}/assets/css/bootstrap.min.css" rel="stylesheet">
-<!-- Flex Slider CSS -->
 <link href="${root}/assets/css/flexslider.css" rel="stylesheet">
-<!-- Pretty Photo -->
 <link href="${root}/assets/css/prettyPhoto.css" rel="stylesheet">
 <!-- Font awesome CSS -->
 <link href="${root}/assets/css/font-awesome.min.css" rel="stylesheet">
-<!-- Custom CSS -->
 <link href="${root}/assets/css/style.css" rel="stylesheet">
-<!-- Color Stylesheet - orange, blue, pink, brown, red or green-->
 <link href="${root}/assets/css/red.css" rel="stylesheet">
 
 <!-- Favicon -->
@@ -37,6 +31,9 @@
 
 <body>
 
+  <!-- Header and style include -->
+  <jsp:include page="Header.jsp" />
+  
   <!-- Header starts -->
 
   <header>
@@ -46,7 +43,7 @@
           <!-- Logo and site link -->
           <div class="logo">
             <h1>
-              <a href="http://ashobiz.asia/ericka36/red/index.html">Ericka<span class="color">.</span></a>
+              <a href="#">Views<span class="color">.</span></a>
             </h1>
           </div>
         </div>
@@ -54,12 +51,12 @@
           <div class="list">
             <!-- Add your phone number here -->
             <div class="phone">
-              <i class="fa fa-phone"></i> Phone: 123-456-7890
+              <i class="fa fa-phone"></i> Phone: 133-011-77895
             </div>
             <hr>
             <!-- Add your email id here -->
             <div class="email">
-              <i class="fa fa-envelope-o"></i> Email: someting@gmail.com
+              <i class="fa fa-envelope-o"></i> Email: wuxinchenghappy@gmail.com
             </div>
             <hr>
             <!-- Add your address here -->
@@ -111,12 +108,10 @@
           <div class="blog">
             <div class="row">
               <div class="col-md-12">
-
                 <!-- Blog Posts -->
                 <div class="row">
                   <div class="col-md-8 col-sm-8">
                     <div class="posts">
-
                       <!-- Each posts should be enclosed inside "entry" class" -->
                       <!-- Post one -->
                       <div class="entry">
@@ -148,7 +143,6 @@
                             href="http://ashobiz.asia/ericka36/red/blog.html#">Praesent
                             ultricies</a> enim ac ipsum aliquet pellentesque.
                         </p>
-                        
                       </div>
 
                       <!-- Post 2 -->
@@ -179,7 +173,30 @@
                             href="http://ashobiz.asia/ericka36/red/blog.html#">Praesent
                             ultricies</a> enim ac ipsum aliquet pellentesque.
                         </p>
-                        
+                      </div>
+
+                      <!-- Post 3: 无图 -->
+                      <div class="entry">
+                        <h2>
+                          <a href="http://ashobiz.asia/ericka36/red/blog.html#">Ut commodo
+                            ullamcorper risus nec mattis</a>
+                        </h2>
+
+                        <!-- Meta details -->
+                        <div class="meta">
+                          <i class="fa fa-calendar"></i> 26-2-2012 <i class="fa fa-user"></i> Admin
+                          <i class="fa fa-folder-open"></i> <a
+                            href="http://ashobiz.asia/ericka36/red/blog.html#">General</a> <span
+                            class="pull-right"><i class="fa fa-comment"></i> <a
+                            href="http://ashobiz.asia/ericka36/red/blog.html#">2 Comments</a></span>
+                        </div>
+
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate
+                          eros nec odio egestas in dictum nisi vehicula. <a
+                            href="http://ashobiz.asia/ericka36/red/blog.html#">Praesent
+                            ultricies</a> enim ac ipsum aliquet pellentesque.
+                        </p>
                       </div>
 
                       <!-- Pagination -->
@@ -195,7 +212,11 @@
 
                     </div>
                   </div>
+                  <!-- Main end -->
+                  
+                  <!-- 侧边栏 start -->
                   <div class="col-md-4 col-sm-4">
+                  	<!-- sidebar start -->
                     <div class="sidebar">
                       <!-- Widget -->
                       <div class="widget">
@@ -208,7 +229,7 @@
                         </form>
                       </div>
                       <div class="widget">
-                        <h4>Recent Posts</h4>
+                        <h4>最新发布</h4>
                         <ul>
                           <li><i class="fa fa-angle-right"></i> Etiam adipisc iaculis justo
                             dictum non</li>
@@ -227,7 +248,7 @@
                         </ul>
                       </div>
                       <div class="widget">
-                        <h4>About</h4>
+                        <h4>可能感兴趣的</h4>
                         <p>
                           Nulla facilisi. Sed justo dui, id erat. Morbi auctor adipiscing tempor.
                           Phasellus condimentum rutrum aliquet. Quisque eu consectetur erat. Proin
@@ -239,14 +260,13 @@
                         </p>
                       </div>
                     </div>
+                    <!-- sidebar end -->
                   </div>
+                  <!-- 侧边栏 end -->
                 </div>
-
-
               </div>
             </div>
           </div>
-
 
           <!-- Service ends -->
 
@@ -280,107 +300,9 @@
   </div>
 
   <!-- Content ends -->
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <!-- Widget 1 -->
-          <div class="widget">
-            <h4>About Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor
-              eget nisi fermentum quis hendrerit magna vestibulum.</p>
-            <!-- Social Media -->
-            <div class="social">
-              <a href="http://ashobiz.asia/ericka36/red/blog.html#"><i
-                class="fa fa-twitter twitter"></i></a> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#"><i
-                class="fa fa-pinterest pinterest"></i></a> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#"><i
-                class="fa fa-facebook facebook"></i></a> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#"><i
-                class="fa fa-google-plus google-plus"></i></a> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#"><i
-                class="fa fa-linkedin linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <!-- widget 2 -->
-          <div class="widget">
-            <h4>Recent Posts</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Sed eu leo orci, in rhoncus
-                  puru</a></li>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Condimentum gravida metus</a></li>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Lpsum, in rhoncus purus</a></li>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Etiam at in rhoncus puru nul</a></li>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Fusce vel magnais dapibus
-                  facilisis</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <!-- Widget 3 -->
-          <div class="widget">
-            <h4>Categories</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Condimentum</a></li>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Etiam at</a></li>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Fusce vel</a></li>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Vivamus</a></li>
-              <li><i class="fa fa-angle-right"></i> <a
-                href="http://ashobiz.asia/ericka36/red/blog.html#">Pellentesque</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <div class="col-md-12">
-          <p class="copy pull-left">
-            <!-- Copyright information. You can remove my site link. -->
-            Copyright © <a href="http://ashobiz.asia/ericka36/red/blog.html#">Your Site</a> |
-            Designed by <a href="http://responsivewebinc.com/">Responsive Web Design</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--/ Footer -->
-
-  <!-- Scroll to top -->
-  <span class="totop" style="display: none;"><a
-    href="http://ashobiz.asia/ericka36/red/blog.html#"><i class="fa fa-angle-up"></i></a></span>
-
-  <!-- Javascript files -->
-  <!-- jQuery -->
-  <script src="${root}/assets/js/jquery.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="${root}/assets/js/bootstrap.min.js"></script>
-  <!-- Isotope, Pretty Photo JS -->
-  <script src="${root}/assets/js/jquery.isotope.js"></script>
-  <script src="${root}/assets/js/jquery.prettyPhoto.js"></script>
-  <!-- Support Page Filter JS -->
-  <script src="${root}/assets/js/filter.js"></script>
-  <!-- Flex slider JS -->
-  <script src="${root}/assets/js/jquery.flexslider-min.js"></script>
-  <!-- Respond JS for IE8 -->
-  <script src="${root}/assets/js/respond.min.js"></script>
-  <!-- HTML5 Support for IE -->
-  <script src="${root}/assets/js/html5shiv.js"></script>
-  <!-- Custom JS -->
-  <script src="${root}/assets/js/custom.js"></script>
+  
+  <!-- Footer and js include -->
+  <jsp:include page="Footer.jsp" />
 
 </body>
 </html>
