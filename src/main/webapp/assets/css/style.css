@@ -2163,6 +2163,7 @@ footer .social a {
 	text-align: center;
 	font-size: 25px;
 	background: rgba(60,60,60,0.7);
+	border-radius: 10px;
 }
 
 .totop a:hover i { background: rgba(60,60,60,1); }

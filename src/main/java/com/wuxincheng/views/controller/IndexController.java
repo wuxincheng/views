@@ -33,13 +33,12 @@ public class IndexController {
 	@Resource private TypeService typeService;
 	
 	/** 每页显示条数 */
-	private final Integer pageSize = 40;
+	private final Integer pageSize = 5;
 	private final Integer pageSizeMobile = 10;
 	
 	@RequestMapping(value = "/")
 	public String list(Model model, HttpServletRequest request, String currentPage) {
 		
-		/*
 		logger.info("查询所有博客信息");
 
 		if (Validation.isBlank(currentPage) || !Validation.isInt(currentPage, "0+")) {
@@ -80,7 +79,6 @@ public class IndexController {
 		// 其它参数设置
 		model.addAttribute(Constants.TOP_NAV_FLAG, "blog");
 		readList(request);
-		 */
 		
 		return "index";
 	}
